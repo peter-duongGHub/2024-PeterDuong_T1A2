@@ -1,0 +1,111 @@
+:root {
+    --dutch-white: #FFEBC6;
+    --white: #F1FFFA;
+    --dark-purple: #140F2D;
+    --navy-blue: #456990;
+    --light-yellow: #F4EBD9;
+ 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: url(../images/Technology.jpg); 
+    
+
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    border: none;
+    color: var(--white);
+}
+
+.quote {
+    font-weight: 300;
+    font-style: italic;
+}
+
+.name {
+    font-size: 2rem;
+}
+
+.logo {
+    padding-top: 30px;
+
+}
+
+.logo img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-around;    
+    font-size: 18px;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 0;
+}
+
+.nav-text {
+    text-decoration: none;
+    border: 2px solid var(--white);
+    border-radius: 15%;
+    padding: 8px 15px;
+    box-shadow: 5px 5px 5px 0px var(--white);
+}
+
+.nav-text {
+    color: var(--white);
+
+}
+
+.container {
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 420px;
+    
+
+}
+
+.container section img {
+    width: 100%;
+}
+
+.content-box {
+    border-radius: 10%;
+    overflow: hidden;
+    color: var(--light-yellow);
+    height: 400px;
+    width: 400px;
+    margin: 20px 0;
+    border: 2px solid var(--light-yellow);
+
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+
+
+}
+
+.social-icons {
+    display:flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.copyright {
+    color: var(--white);
+    padding-top: 20px;
+}
