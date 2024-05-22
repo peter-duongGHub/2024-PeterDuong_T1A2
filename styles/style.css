@@ -4,7 +4,9 @@
     --dark-purple: #140F2D;
     --navy-blue: #456990;
     --light-yellow: #F4EBD9;
- 
+    line-height: 1.5;
+    letter-spacing: normal;
+    word-spacing: normal;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -21,11 +23,6 @@ header {
     justify-content: center;
     border: none;
     color: var(--white);
-}
-
-.quote {
-    font-weight: 300;
-    font-style: italic;
 }
 
 .name {
@@ -108,4 +105,9 @@ footer {
 .copyright {
     color: var(--white);
     padding-top: 20px;
+}
+
+.first-box img {
+    height: 200px;
+    width: 100%;
 }
