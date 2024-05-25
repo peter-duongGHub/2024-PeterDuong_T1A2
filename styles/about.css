@@ -1,32 +1,55 @@
-body {    
-    color: var(--dutch-white);
-    line-height: 1.5;
-    letter-spacing: normal;
-    word-spacing: normal;
-    
+/* Set Font-size of 16px for readability purposes on Mobile View, Set Font Family
+to standard fonts */
+body {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Added border and background color with margin and padding to about-me content box with a 
+box shadow */
+.about-me {
+    background-color: #FFEBC6;
+    border-radius: 5px;
+    padding: 30px 10px;
+    margin: 40px 30px;
+    text-align: center;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+   
+}
+
+/* Added padding around paragraph tag content box */
+.about-me p {
+    padding: 20px;
+}
+
+section {
+}
+
+/* Added background color to Horizontal Line tag */
+hr {
+    background-color: black;
+}
+
+/* Added Italics through CSS instead of <em> html tag */
+article span {
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* Set Image Size Width and Height properties */
+article img {
+    width: 300px;
+    height: 300px;
     
 }
 
 
-.work-exp {
-    display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    padding: 15px 30px;
-    border-radius: 5%;   
-    border-bottom: 2px solid var(--light-yellow);
-    color:var(--light-yellow);
-    line-height: 1.5;
-    letter-spacing: 0.12rem;
-    word-spacing: 0.16rem;
-    
-}
 
-.about {
+
+.hobbies {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    margin: 30px 0;
+    justify-content: center;
 }
 

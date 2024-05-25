@@ -43,7 +43,7 @@ body {
     text-align: center;
     align-items: center;
     border: none;
-    color: var(--light-yellow);
+    color: #FFEBC6;
     width: 100%;
 }
 
@@ -54,7 +54,7 @@ body {
     font-size: 1.7rem;
     border: 10px ridge  #057dcd;
     border-radius: 20px;
-    background-color: var(--light-yellow);
+    background-color: #FFEBC6;
     color: black;
     width: 80%;
     margin-top: 5vh;
@@ -80,7 +80,6 @@ body {
     margin: auto;
     flex-direction: row;
     position: relative;
-    color: var(--light-yellow);
     border: 10px outset  #057dcd;
     border-left: 0;
     border-right: 0;
@@ -91,7 +90,7 @@ body {
 .nav-text {
     padding: 0 15px;
     text-decoration: none;
-    color:  var(--light-yellow);
+    color: #FFEBC6;
     font-size: 1rem;
 }
 
@@ -105,14 +104,16 @@ section {
     text-align: center;
 }
 
-h1, h2, hr {
-    color: #FFD166;
+h1, h2, hr, i {
+    color: #057dcd;
     margin-top: 60px;
     margin-bottom: 20px;
+    text-align: center;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 hr {
-    border: 1px solid #FFD166;
+    border: 1px solid #FFEBC6;
     width: 300px;
 }
 
@@ -127,7 +128,7 @@ hr {
 
 .visionBox2 {
     font-size: 20px;
-    background-color: #FFD166;
+    background-color: #FFEBC6;
     border: 5px ridge red;
     width: 50%;
     height:200px;
@@ -152,7 +153,7 @@ hr {
 
 /* Created a section with  */
 section ul {
-    background-color: #FFD166;
+    background-color: #FFEBC6;
     margin: 40px;
     padding: 30px;
     color: black;
@@ -164,9 +165,8 @@ section ul {
     border-right: 0;
 }
 
-.fa-solid {
-    color: #FFD166;
-    outline: 2px black;
+h2:nth-child(2){
+    color: #057dcd;
 }
 
 /* Added Footer Section with padding of 20px around top,right,bottom and left */
@@ -194,7 +194,7 @@ i {
 
 /* Added Footer Copyright Text with Font size, and Color */
 .copyright {
-    color: #FFD166;
+    color: #FFEBC6;
     font-size: 1rem;
     padding-top: 20px;
 }
