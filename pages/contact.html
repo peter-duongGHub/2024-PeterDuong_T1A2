@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PeterDuong_T1A2</title>
-    <link rel="icon" type="image/x-icon" href="../images/computer.png">
+    <link rel="icon" type="image/x-icon" href="./images/computer.png">
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/contact.css">
 
@@ -16,22 +16,52 @@
 
 <body>
     <header class="flex1">
-        <img class="logo" src="../images/PetersFace.png" alt="Peter's Face">
+            <img class="logo" src="../images/PetersFace.png" alt="Peter's Face">
 
-    <div class="name">
-    <p>PETER <span>DUONG</span></p>
+        <div class="name">
+        <p>PETER <span>DUONG</span></p>
+        </div>
+        <div class="nav-menu">
+    <nav>
+        <a class="nav-text" href="../index.html">Home</a>
+        <a class="nav-text" href="./about.html">About</a>
+        <a class="nav-text" href="./services.html">Services</a>
+        <a class="nav-text" href="#">Contact</a>
+        <a class="nav-text" href="./blog.html">Blog</a>
+    </nav>
     </div>
-    <div class="nav-menu">
-<nav>
-    <a class="nav-text" href="../index.html">Home</a>
-    <a class="nav-text" href="./pages/about.html">About</a>
-    <a class="nav-text" href="./pages/services.html">Services</a>
-    <a class="nav-text" href="#">Contact</a>
-    <a class="nav-text" href="./pages/blog.html">Blog</a>
-</nav>
-</div>
-</header>
+    </header>
 
+    <main>
+        <form>
+            <h1>Contact Me</h1>
+            <div class="form-content">
+            <label for="name">Name: </label>
+            <input type="text" id="name" placeholder="Name">
+            </div>
+            <div class="form-content">
+            <label for="name">Phone: </label>
+            <input type="number" id="phone" placeholder="phone" minlength="10">
+            </div>
+            <div class="form-content">
+            <label for="name">E-mail: </label>
+            <input type="email" id="e-mail" placeholder="Email">
+            </div>
+            <div class="form-content">
+            <label for="textBox">Reason: </label>
+            <input type="text" id="textBox" placeholder="Reason">
+            </div> 
+            <div class="form-content">     
+            <button type="submit">Submit</button>
+        </div>  
+        </form>
+
+
+        </main>
+
+
+
+    </body>
 
 
     <footer>
@@ -53,5 +83,4 @@
    <p>&copy; Copyright by PeterDuong_T1A2 CoderAcademy</p>
 </div>
 </footer>
-</body>
 </html>

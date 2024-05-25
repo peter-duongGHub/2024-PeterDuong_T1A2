@@ -10,9 +10,14 @@ box shadow */
 .about-me {
     background-color: #FFEBC6;
     border-radius: 5px;
-    padding: 20px 0px;
-    margin: 80px 30px;
+    padding: 20px 10px;
+    margin: 70px 30px;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.about1 {
+    padding-left: 0;
+    padding-right: 0;
 }
 
 /* Added padding around paragraph tag content box */
@@ -24,6 +29,7 @@ box shadow */
 /* Added background color to Horizontal Line tag */
 hr {
     background-color: black;
+    width: 80%;
 }
 
 /* Added Italics through CSS instead of <em> html tag */
