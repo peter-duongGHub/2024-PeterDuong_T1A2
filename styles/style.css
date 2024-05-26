@@ -15,6 +15,7 @@
     
 }
 
+/* Reset all margin and padding for elements within HTML and Body Tag */
 html, body {
     margin: 0;
     padding: 0;

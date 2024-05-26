@@ -13,6 +13,7 @@ div img {
     background-color: #FFEBC6;
     border-radius: 5px;
     overflow:hidden;
+    border: 1px solid #057dcd;
 }
 
 .content-text {
