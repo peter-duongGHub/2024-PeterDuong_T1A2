@@ -3,6 +3,7 @@ to standard fonts */
 body {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 
 /* Added border and background color with margin and padding to about-me content box with a 
@@ -10,9 +11,13 @@ box shadow */
 .about-me {
     background-color: #FFEBC6;
     border-radius: 5px;
-    padding: 20px 10px;
+    padding: 10px 10px 20px 10px;
     margin: 70px 30px;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.about-me h1 {
+    font-size: 32px;
 }
 
 .about1 {
@@ -28,8 +33,11 @@ box shadow */
 
 /* Added background color to Horizontal Line tag */
 hr {
-    background-color: black;
     width: 80%;
+}
+
+h2 {
+    color: #FFEBC6;
 }
 
 /* Added Italics through CSS instead of <em> html tag */
@@ -48,5 +56,4 @@ article img {
 section p {
     text-align: left;
 }
-
 

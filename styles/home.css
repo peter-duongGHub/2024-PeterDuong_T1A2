@@ -1,0 +1,89 @@
+section {
+    text-align: center;
+}
+
+hr {
+    border: 1px solid #FFEBC6;
+    width: 80%;
+}
+
+h2 {
+    color: #FFEBC6;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.container {
+    display: flex;
+    height: 400px;
+    width: 100%;
+    margin-left: 10px;
+    align-items: center;
+
+}
+
+.visionBox2 {
+    font-size: 20px;
+    background-color: #456990B3;
+    border: 5px ridge #057dcd;
+    width: 50%;
+    height:200px;
+    color: #FFEBC6;
+    padding: 10px 20px;
+    position: relative;
+    left: -25px;
+    border-radius: 5%;
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.container p {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.visionBox1 img {
+    width: 200px;
+    height:300px;
+}
+
+/* Created a section with  */
+section ul {
+    background-color: #456990B3;
+    margin: 40px;
+    padding: 30px;
+    color: #FFEBC6;
+    font-size: 20px;
+    border: 5px solid #057dcd;
+    border-radius: 5%;;
+    box-shadow: 6px 5px 17px 0px rgba(0,0,0,0.75);
+    border-left: 0;
+    border-right: 0;
+}
+
+hr {
+    border: 1px solid #FFEBC6;
+    width: 300px;
+}
+
+/* Set animation name, duration and iteration count for Icons */
+.fa-solid {
+    position: relative;
+    animation-name: icon;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+/* Keyframe animation changing from #057dcd to #FFEBC6; */
+@keyframes icon {
+    0% {color: #057dcd;
+        left: -75px;
+    }
+    50% {color: #FFEBC6;
+        left: 0px
+    }
+    100% {color: #057dcd;
+        left: 75px;
+    }
+}

@@ -22,7 +22,7 @@ html, body {
 
 /* Inserted background image for body */
 body {
-    background: linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.05)),
+    background: linear-gradient(rgba(255,255,255,0.1),rgba(0,0,0,0.2)),
     url(../images/Earth.jpg) no-repeat center;
     background-position: 50% 40%;
 }
@@ -100,74 +100,15 @@ body {
     color: #e8eef1;
 }
 
-section {
-    text-align: center;
-}
-
-h1, h2, hr, i {
-    color: #057dcd;
+h1, hr, i {
+    color: #FFEBC6;
     margin-top: 60px;
     margin-bottom: 20px;
     text-align: center;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
-hr {
-    border: 1px solid #FFEBC6;
-    width: 300px;
-}
 
-.container {
-    display: flex;
-    height: 400px;
-    width: 100%;
-    margin-left: 10px;
-    align-items: center;
-
-}
-
-.visionBox2 {
-    font-size: 20px;
-    background-color: #FFEBC6;
-    border: 5px ridge red;
-    width: 50%;
-    height:200px;
-    color: black;
-    padding: 10px 20px;
-    position: relative;
-    left: -25px;
-    border-radius: 5%;
-}
-
-.container p {
-    margin: 0;
-    padding: 0;
-}
-
-
-
-.visionBox1 img {
-    width: 200px;
-    height:300px;
-}
-
-/* Created a section with  */
-section ul {
-    background-color: #FFEBC6;
-    margin: 40px;
-    padding: 30px;
-    color: black;
-    font-size: 20px;
-    border: 5px solid red;
-    border-radius: 5%;;
-    box-shadow: 6px 5px 17px 0px rgba(0,0,0,0.75);
-    border-left: 0;
-    border-right: 0;
-}
-
-h2:nth-child(2){
-    color: #057dcd;
-}
 
 /* Added Footer Section with padding of 20px around top,right,bottom and left */
 footer {

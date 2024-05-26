@@ -1,26 +1,108 @@
-.content-box {
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0;
+
+ul {
+    background-color: #456990B3;
+    padding: 20px;
+    margin: 20px 20px 10vh 20px;
+    box-shadow: 6px 5px 17px 0px rgba(0,0,0,0.75);
+    border-radius: 10px;
+    color: #FFEBC6;
+    
 }
 
-.first-box {
-    width: 300px;
-    height: 100%;
-    padding: 20px;    
-    margin-bottom: 0;
-}
-
-.date {
-    color: var(--white);
-    font-size: 12px;
-}
-
-.read-btn {
-    background-color: var(--navy-blue);
+ul li {
     padding: 10px;
-    border-radius: 20px;
+    list-style-type:square;
+    list-style-position: inside;
 }
+
+ul li a{
+    text-decoration: none;
+    color: #FFEBC6;
+}
+
+.blog {
+    display: flex;
+    flex-direction: column;
+}
+/* Changed H1 text color to #FFEBC6 */
+h1, h2 {
+    color: #FFEBC6;
+}
+
+.blog-links h2 {
+    margin-left: 20px;
+}
+
+/* Created Image Size for Blog Links */
+main article img {
+    width: 15vh;
+    height: 20vh;
+}
+
+/* Fixed Blog Paragraph content font-size at 13px */
+.blog-content p {
+    font-size: 13px;
+}
+
+/* Set margins and padding-top and padding-bottom 20px around Each Article Content Box, 
+Set Left and right padding to 0  */
+article {
+    
+    margin-bottom: 5vh;
+    padding: 20px 20px;
+    background-color: #456990B3;
+    border-radius: 10px;
+    box-shadow: 6px 5px 17px 0px rgba(0,0,0,0.75);
+
+
+}
+
+/* Set display of Blog image to inline-block and set width to take up 50% of parent container  */
+.blog-image {
+    display: inline-block;
+    width: 50%;
+    overflow: hidden;
+}
+
+/* Set display of Blog text to inline-block and set width to take up 40% of parent container 
+Set text color #FFEBC6 */
+.blog-text {
+    width: 40%;
+    display: inline-block;
+    color: #FFEBC6;
+
+}
+
+.blog-text p {
+    font-size: 13px;
+}
+
+/* Set Lorem Ipsum Text Color */
+.text {
+    color: #FFEBC6;
+}
+
+/* Set padding around button 10px for top & bottom and 20px for right & left,
+Set text color to #FFEBC6 and border values*/
+.content-box button {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #FFEBC6;
+    border: 5px inset #FFEBC6;
+    border-radius: 2px;
+}
+
+/* Text Align Horizontal Line, H1 and Main Element to left */
+main h1, hr {
+    text-align: left;
+    margin-left: 20px;
+}
+
+/* Set Width 80% for Horizontal Line */
+hr {
+    width: 80%;
+    margin-top: 0;
+    margin-bottom: 7vh;
+}
+
+
