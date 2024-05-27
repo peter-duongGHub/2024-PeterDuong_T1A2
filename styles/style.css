@@ -1,3 +1,5 @@
+/* Mobile Version Breakpoint max-width: 768px Mobile Breakpoint */
+
 /* Imported Font style Kanit from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
@@ -12,20 +14,33 @@
     letter-spacing: normal;
     word-spacing: normal;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
     
 }
 
 /* Reset all margin and padding for elements within HTML and Body Tag */
-html, body {
-    margin: 0;
-    padding: 0;
-}
-
 /* Inserted background image for body */
 body {
     background: linear-gradient(rgba(255,255,255,0.1),rgba(0,0,0,0.2)),
     url(../images/Earth.jpg) no-repeat center;
     background-position: 50% 40%;
+    margin: 0;
+    padding: 0;
+    color: #FFEBC6;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+body::-webkit-scrollbar {
+    width: 0.1rem;
+}
+
+body::-webkit-scrollbar-track{
+    background: #FFD166;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #057dcd;
 }
 
 /* Set Logo Size, Border Added with double lines, Margin Added to Top */
@@ -44,7 +59,6 @@ body {
     text-align: center;
     align-items: center;
     border: none;
-    color: #FFEBC6;
     width: 100%;
 }
 
@@ -52,21 +66,18 @@ body {
 /* Set name beneath logo with overlapping content onto Nav Menu using Flexbox*/
 .name {
     font-family: Kanit;
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     border: 10px ridge  #057dcd;
     border-radius: 20px;
     background-color: #FFEBC6;
     color: black;
-    width: 80%;
+    width: 60%;
     margin-top: 5vh;
     position: relative;
-    transform: translate(0, 25px);
+    transform: translate(0, 40px);
     z-index: 1;
     
 
-}
-.name p {
-    margin: 15px;
 }
 
 .name span {
@@ -78,22 +89,28 @@ body {
     background-color: #456990B3;
     width: 100%;
     padding: 40px 0 10px 0;
-    margin: auto;
-    flex-direction: row;
-    position: relative;
     border: 10px outset  #057dcd;
     border-left: 0;
     border-right: 0;
+    margin: 0;
+
     
 }
 
-/* Added color to text within navigation bar, added padding, removed default highlighting to texts with anchor tag. Changed font size */
-.nav-text {
-    padding: 0 15px;
-    text-decoration: none;
-    color: #FFEBC6;
-    font-size: 1rem;
+.nav-flex {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding-left: 0;
 }
+
+.nav-flex li a {
+    font-size: 1.2rem;
+    color: #FFEBC6;
+    text-decoration: none;
+
+}
+
 
 /* Pseudoclass added when mouse hovers over background colour and text color changes */
 .nav-text:hover {
@@ -127,16 +144,35 @@ margin of 20px */
     justify-content: space-around;
     text-align: center;
     margin-bottom: 20px;
+    list-style: none;
 }
 
 /* Changed icon sizes to 30px each */
 i {
-    font-size: 30px;
+    font-size: 2rem;
 }
 
 /* Added Footer Copyright Text with Font size, and Color */
 .copyright {
-    color: #FFEBC6;
-    font-size: 1rem;
     padding-top: 20px;
+    font-size: 1.1rem;
+}
+
+.info p{
+    margin: 3vh 0;
+    font-size: 1.1rem;
+}
+
+
+/* Tablet Version Breakpoint min Width: 992px */
+@media screen and (min-width: 992px) {
+    .social-icons {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .social-icons i {
+        font-size: 2.5rem;
+    }
 }

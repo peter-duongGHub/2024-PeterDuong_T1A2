@@ -21,66 +21,87 @@
         <div class="name">
         <p>PETER <span>DUONG</span></p>
         </div>
-        <div class="nav-menu">
-    <nav>
-        <a class="nav-text" href="#">Home</a>
-        <a class="nav-text" href="./pages/about.html">About</a>
-        <a class="nav-text" href="./pages/projects.html">Projects</a>
-        <a class="nav-text" href="./pages/contact.html">Contact</a>
-        <a class="nav-text" href="./pages/blog.html">Blog</a>
+        
+    <nav class="nav-menu">
+        <ul class="nav-flex">
+            <li><a class="nav-text" href="#">Home</a></li>
+            <li><a class="nav-text" href="./pages/about.html">About</a></li>
+            <li><a class="nav-text" href="./pages/projects.html">Projects</a></li>
+            <li><a class="nav-text" href="./pages/contact.html">Contact</a></li>
+            <li><a class="nav-text" href="./pages/blog.html">Blog</a></li>
+    </ul>
     </nav>
-    </div>
+
+    
     </header>
 
-    <main>
+    <main class="outer-flex">
 
         <h1>Home</h1>
 
         <section>
+            
             <h2>My Vision</h2>
             <i class="fa-solid fa-eye"></i>
             <hr>
-            <div class="container">
-                <div class="visionBox1"><img src="./images/Vision.jpg" alt="Dream Big"></div>
-                <div class="visionBox2"><p>Creating software that solves current
-                    issues in today's society. Dream job is to become a software engineer.
+        
+            <section class="container">
+                <div class="vision-image"><img src="./images/Vision.jpg" alt="Dream Big"></div>
+                <div class="vision-text"><p>I dream to one day create software that solves current
+                    issues in today's society. In my spare time I continue to learn more programming languages,
+                    pursue more knowledge to better myself in hopes to eventually become a software engineer. I have
+                    a proficient amount of knowledge in HTML, CSS & JavaScript and am currently enrolled in CoderAcademy'
+                    2024 April Standard BootCamp.
                 </p>
                 </div>
-            </div>
+            </section>
+
+            <hr class="middle-hr">
+
         </section>
 
-        <section>
+        <section class="skills-flex">
+        <section class="skills">
+            <div>
             <h2>Education</h2>
             <i class="fa-solid fa-book"></i>
             <hr>
+            </div>
+            <div class="skills-text">
             <ul>
                 <li><em>Higher School Certificate (HSC 2017 - 2018)</em></li>
                 <li><em>University of Sydney -Deferred (BMedSci 2018 - 2020)</em></li>
                 <li><em>CoderAcademy April STD Bootcamp -Current (2024 - 2025)</em></li>
-        
-        
             </ul>
+        </div>
                   
 
         </section>
 
-        <section>
+        <section class="skills">
+            <div>
             <h2>Work Experience</h2>
             <i class="fa-solid fa-helmet-safety"></i>
             <hr>
+        </div>
+        <div class="skills-text">
             <ul>
                 <li><em>Hospitality Worker (2018-2020)</em></li>
                 <li><em>Auto Detailing Business (2020-2022)</em></li>
                 <li><em>Domestic Home Cleaning Business (2022-2024)</em></li>
                
             </ul>
+        </div>
         </section>
 
         <section class="skills">
+            <div>
             <h2>Relevant Skills</h2>
             <i class="fa-solid fa-pen"></i>
             <hr>
-            <ul>
+        </div>
+            <div class="skills-text">
+            <ul >
                 <li><em>HTML (Ongoing Learning)</em></li>
                 <li><em>CSS (Ongoing Learning)</em></li>
                 <li><em>Python (Ongoing Learning)</em></li>
@@ -88,7 +109,9 @@
                 <li><em>JavaScript (Ongoing Learning)</em></li>
                
             </ul>
+        </div>
         </section>
+    </section>
 
 
 
@@ -96,20 +119,32 @@
     
 
     <footer>
-    
-        <div class="social-icons">
-            <a class="nav-text" href="https://www.linkedin.com" target="_blank">
-            <i class="fa-brands fa-linkedin"></i>
-        </a>
-            <a class="nav-text" href="https://www.facebook.com" target="_blank">
-                <i class="fa-brands fa-square-facebook"></i>
-            </a>
-
-            <a class="nav-text" href="https://www.github.com" target="_blank">
-                <i class="fa-brands fa-github"></i>
-            </a>
         
-    </div>
+        <nav>
+        <ul class="social-icons">
+            <li><a class="nav-text" href="https://www.linkedin.com" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+        </a></li>
+        <li><a class="nav-text" href="https://www.facebook.com" target="_blank">
+                <i class="fa-brands fa-square-facebook"></i>
+            </a></li>
+
+            <li><a class="nav-text" href="https://www.github.com" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a></li>
+</nav>
+
+<section class="info">
+    <p>
+        Address: 1 Random Street, Suburb Australia
+    </p>
+    <p>
+        Email: 15728@coderacademy.edu.au
+    </p>
+
+
+</section>
+
     <div class="copyright">
    <p>&copy; Copyright by PeterDuong_T1A2 CoderAcademy</p>
 </div>

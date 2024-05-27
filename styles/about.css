@@ -6,6 +6,12 @@ body {
     text-align: center;
 }
 
+/* Created Flex-box display for main element */
+main {
+    display: flex;
+    flex-direction: column;
+}
+
 /* Added border and background color with margin and padding to about-me content box with a 
 box shadow */
 .about-me {

@@ -1,3 +1,5 @@
+/* Mobile Version Breakpoint max-width: 768px Mobile Breakpoint */
+
 section {
     text-align: center;
 }
@@ -5,6 +7,7 @@ section {
 hr {
     border: 1px solid #FFEBC6;
     width: 80%;
+    margin-bottom: 5vh;
 }
 
 h2 {
@@ -14,47 +17,51 @@ h2 {
 
 .container {
     display: flex;
-    height: 400px;
-    width: 100%;
-    margin-left: 10px;
+    height: 30vh;
+    width: 100vw;
+    margin-bottom: 5vh;
+    justify-content: center;
     align-items: center;
-
 }
 
-.visionBox2 {
-    font-size: 17px;
+.vision-text {
     background-color: #456990B3;
     border: 5px ridge #057dcd;
-    width: 50%;
-    height:200px;
+    width: 40vw;
     color: #FFEBC6;
-    padding: 20px 20px;
+    padding: 20px;
     position: relative;
-    left: -25px;
+    left: -55px;
     border-radius: 5%;
     border-top: 0;
     border-bottom: 0;
+    box-shadow: 6px 5px 17px 0px rgba(0,0,0,0.75);
+
 }
 
-.container p {
-    margin: 0;
-    padding: 0;
+.middle-hr {
+    display: none;
 }
 
-
-
-.visionBox1 img {
-    width: 200px;
+.vision-image img {
+    width: 40vw;
     height:300px;
+    padding: 20px;
+
+}
+
+.skills-text, .vision-text {
+    font-size: 1.1rem;
 }
 
 /* Created a section with  */
 section ul {
     background-color: #456990B3;
-    margin: 40px;
+    width: 300px;
+    margin: auto;
+    margin-bottom: 5vh;
     padding: 30px;
     color: #FFEBC6;
-    font-size: 17px;
     border: 5px solid #057dcd;
     border-radius: 5%;;
     box-shadow: 6px 5px 17px 0px rgba(0,0,0,0.75);
@@ -62,7 +69,9 @@ section ul {
     border-right: 0;
     list-style-position: inside;
     list-style-type: circle;
+
 }
+
 
 hr {
     border: 1px solid #FFEBC6;
@@ -80,12 +89,48 @@ hr {
 /* Keyframe animation changing from #057dcd to #FFEBC6; */
 @keyframes icon {
     0% {color: #057dcd;
-        left: -75px;
+        left: -35px;
     }
     50% {color: #FFEBC6;
         left: 0px
     }
     100% {color: #057dcd;
-        left: 75px;
+        left: 35px;
     }
 }
+
+/* Tablet Version Breakpoint min-width: 992px Tablet Breakpoint */
+@media screen and (min-width: 992px){
+    .container {
+        flex-flow: row-reverse;
+        width: 80vw;
+       
+    }
+    .vision-text {
+        margin-right: -20vw;
+        margin-left: 15vw;
+    }
+    
+    hr {
+        display: none;
+    }
+   
+    .skills i {
+        display: none;
+    }
+
+    .skills-flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        
+    }
+    .middle-hr {
+        display: block;
+        width: 60vw;
+        border: 2px solid #FFEBC6;
+    }
+
+}
+
+/* Desktop Version Breakpoint min-width: 1200px Desktop Breakpoint */
