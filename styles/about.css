@@ -3,8 +3,6 @@ to standard fonts */
 
 
 body {
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     color: black;
 }
@@ -13,56 +11,37 @@ body {
 main {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
-/* Hidden logo, name and navbar from header to later use with responsive design using
-desktop breakpoint min-width: 1200px */
-footer .logo-box {
-    display: none;
-}
-
-footer .name-box {
-    display: none;
-}
-
-footer .navbar {
-    display: none;
-}
-
 
 /* Added border and background color with margin and padding to about-me content box with a 
 box shadow */
-.about-me {
+.about-box {
     background-color: #FFEBC6;
     border-radius: 5px;
     padding: 10px 10px 20px 10px;
-    margin: 70px 30px;
+    margin: auto;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    margin-bottom: 5vh;
 }
-
-.about-me h1 {
-    font-size: 32px;
-}
-
-.about1 {
-    padding-left: 0;
-    padding-right: 0;
-}
-
-/* Added padding around paragraph tag content box */
-.about-me p {
-    padding: 20px;
-}
-
 
 /* Added background color to Horizontal Line tag */
 hr {
-    width: 80%;
+    width: 60%;
 }
 
-h2 {
-    color: #FFEBC6;
+.about1 {
+    padding: 20px;
+    width: 50vw;
+    margin-bottom: 2vh;
+    background-color: #FFEBC6;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    margin-bottom: 4vh;
+
 }
+
 
 /* Added Italics through CSS instead of <em> html tag */
 article span {
@@ -72,8 +51,50 @@ article span {
 
 /* Set Image Size Width and Height properties */
 article img {
-    width: 300px;
+    width: 80%;
     height: 300px;
 }
 
+h2 {
+    color: #FFEBC6;
+}
 
+footer {
+    color: #FFEBC6;
+}
+
+@media screen and (min-width: 992px) {
+
+   
+
+    .hobbies {
+        display: flex;
+        flex-wrap: wrap;  
+       
+    }
+
+    .about-box {
+         width: 300px;
+         padding: 10px;
+         margin: 15px 15px 10vh 15px;
+         display: block;
+        
+
+    }
+    h2, hr {
+        display: none;
+    }
+
+    .about1 {
+        width: 25vw;
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+
+    @media screen and (min-width: 1200px) {
+        main {
+            margin-left: 15vw;
+            text-align: center;
+        }
+    }
+}

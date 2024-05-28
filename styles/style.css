@@ -34,8 +34,8 @@ body {
 
 /* Set Logo Size, Border Added with double lines, Margin Added to Top */
 .logo {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     border: 10px inset #057dcdcf;
     margin-top: 15px;
@@ -79,6 +79,10 @@ footer .logo-box {
     transform: translate(0, 40px);
 }
 
+.name-box p {
+    margin: 10px;
+}
+
 .name-box span {
     color: #057dcd;
 }
@@ -87,7 +91,7 @@ footer .logo-box {
 .navbar {
     background-color: #456990B3;
     width: 100vw;
-    padding: 40px 0 10px 0;
+    padding: 25px 0 10px 0;
     border: 10px outset  #057dcd;
     margin: 0;
     border-left: none;
@@ -103,7 +107,7 @@ footer .logo-box {
 }
 
 .nav-flex li a {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #FFEBC6;
     text-decoration: none;
 
@@ -118,7 +122,7 @@ footer .logo-box {
 
 h1, hr, i {
     color: #FFEBC6;
-    margin-top: 60px;
+    margin-top: 40px;
     margin-bottom: 20px;
     text-align: center;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
@@ -152,7 +156,7 @@ margin of 20px */
 
 /* Changed icon sizes to 30px each */
 i {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 /* Added Footer Copyright Text with Font size, and Color */
@@ -259,7 +263,51 @@ footer .logo-box {
     width: 5vw;
     height: 10vh;
 }
+
+/* Changed color of surname using span */
+.name-box span {
+    color: #FFEBC6;
+  }
   
+/* Set properties and values to name content */
+.name-box {
+    margin: auto;
+    padding: 0;
+    width: 10vw;
+    color: #FFEBC6;
+    border: 2px solid #FFEBC6;
+  }
+
+  .navbar {
+    margin: auto;
+    margin-top: 20px;
+    width: 8vw;
+  }
+
+.nav-flex {
+  padding: 0;
+  width: 10vw;
+  gap: 4.5vh;
+  margin-top: 2vh;
+}
+
+/* Set footer to flex-direction column to change default axis, added width, height */
+footer {
+    flex-direction: column;
+    width: 15vw;
+    height: 100%;
+    position: fixed;
+    top:0;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+/* Padding added to text section within footer */
+.info-box, .copyright {
+    display: none;
+  }
+
   footer .name-box {
     display: block;
     padding: 0 10px;
@@ -278,8 +326,13 @@ body {
     url(../images/Tech.jpg) no-repeat;
 }
 
-.vision-outerbox i {
+/* Removed header section for responsive design wtih Desktop Breakpoint min-width: 1200px */
+.header-box {
     display: none;
+  }
+
+.social-icons {
+    margin-top: 4vh;
 }
 
 }
