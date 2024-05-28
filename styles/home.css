@@ -155,11 +155,8 @@ section ul {
     height: 100%;
     position: fixed;
     top:0;
-    left: 0;
-    text-align: center;
     justify-content: center;
     align-items: center;
-   
   }
 
 /* Set properties and values to name content */
@@ -178,8 +175,16 @@ section ul {
   }
 
 .nav-flex {
-  gap: 5vh;
+  margin: auto;
+  padding: 0;
+  width: 10vw;
+  gap: 45px;
+  margin-top: 2vh;
+}
+
+.nav-text {
   justify-content: center;
+  align-items: center;
 }
 
 /* Changed color of surname using span */

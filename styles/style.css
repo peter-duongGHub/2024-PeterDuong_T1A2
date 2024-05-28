@@ -203,15 +203,11 @@ i {
     width: 20vw;
     position:none;
     transform: none;
-    z-index: none;
     font-size: 1.2rem;
     box-shadow: 6px 5px 17px 0px rgba(0,0,0,0.75);
 
 }
-.name-box p {
-    margin: 10px 0;
 
-}
 .navbar {
     padding: 0;
     background: none;
@@ -269,9 +265,9 @@ footer .logo-box {
   footer .navbar {
     display: flex;  
 }
-.navbar .nav-flex {
+.nav-flex {
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
 }
   
 body {
