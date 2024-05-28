@@ -78,6 +78,18 @@ hr {
     width: 300px;
 }
 
+footer .logo-box {
+    display: none;
+}
+
+footer .name-box {
+    display: none;
+}
+
+footer .navbar {
+    display: none;
+}
+
 /* Set animation name, duration and iteration count for Icons */
 .fa-solid {
     position: relative;
@@ -134,3 +146,93 @@ hr {
 }
 
 /* Desktop Version Breakpoint min-width: 1200px Desktop Breakpoint */
+@media screen and (min-width: 1200px){
+      
+    body {
+        background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+        url(../images/Tech.jpg) no-repeat;
+        }
+
+    .vision-text {
+        position: relative;
+        left: 0;
+        margin: 0;
+        margin-left: 3vw;
+    }
+   
+   .middle-hr {
+    display: none;
+   }
+  .outer-flex {
+    margin-left: 20vw;
+  }
+
+  footer {
+    flex-direction: column;
+    width: 20vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    align-items: center;
+    justify-content: space-around;
+    
+  }
+
+  .nav-flex {
+    flex-direction: column;
+    gap: 5vh;
+    margin-top: 20px;
+    align-items: center;
+  }
+
+  .navbar {
+    justify-content: center;
+  }
+
+  footer .logo-box {
+    display: block;
+    margin-top: 2vh;
+}
+
+footer .name-box {
+    display: flex;
+}
+
+footer .navbar {
+    display: flex;
+}
+
+  .social-icons {
+    padding: 0;
+    margin-top: 2vh;
+  }
+
+  .name-box {
+    width: auto;
+    margin: 0 20px 20px 20px;
+    border: none;
+    color: #FFEBC6;
+    justify-content: center;
+    border: 2px solid #FFEBC6;
+  }
+  .name-box span {
+    color: #FFEBC6;
+  }
+
+  .nav-text {
+    margin: 40px;
+  }
+
+  .skills-flex ul {
+    margin-bottom: 0;
+  }
+
+  .header-box {
+    display: none;
+  }
+  
+    .info, .copyright {
+        padding: 20px;
+    }
+   
+}
