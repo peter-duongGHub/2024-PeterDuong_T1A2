@@ -3,10 +3,9 @@
 /* Imported Font style Kanit from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* Defined variables to use universally throughout CSS Pages */
+/* Defined variables to use universally throughout html pages linking to style.css*/
 :root {
     --dutch-white: #FFEBC6;
-    --white: #F1FFFA;
     --dark-purple: #171738;
     --navy-blue: #456990;
     --light-yellow: #FFD166;
@@ -31,18 +30,6 @@ body {
     overflow-y: scroll;
 }
 
-body::-webkit-scrollbar {
-    width: 0.1rem;
-}
-
-body::-webkit-scrollbar-track{
-    background: #FFD166;
-}
-
-body::-webkit-scrollbar-thumb {
-    background: #057dcd;
-}
-
 /* Set Logo Size, Border Added with double lines, Margin Added to Top */
 .logo {
     width: 200px;
@@ -51,6 +38,12 @@ body::-webkit-scrollbar-thumb {
     border: 10px inset #057dcdcf;
     margin-top: 15px;
 }
+
+.logo-box {
+    margin-top: 2vh;
+}
+
+
 
 /* Created Flexbox in Header Element to align as a column  */
 .header-box {
@@ -72,7 +65,7 @@ body::-webkit-scrollbar-thumb {
     background-color: #FFEBC6;
     color: black;
     width: 60%;
-    margin-top: 5vh;
+    margin-top: 3vh;
     position: relative;
     transform: translate(0, 40px);
     z-index: 1;
@@ -175,6 +168,7 @@ i {
 
 /* Tablet Version Breakpoint min Width: 992px */
 @media screen and (min-width: 992px){ 
+    
 .header-box {
     flex-direction: row;
     margin:0;
@@ -221,6 +215,11 @@ i {
 }
 .header-box div span {
     color: #FFEBC6;
+    
+}
+
+.header-box, footer {
+    box-shadow: 6px 5px 17px 0px rgba(0,0,0,0.75);
 }
 
 .social-icons {

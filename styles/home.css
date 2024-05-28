@@ -46,6 +46,20 @@ width and height viewport*/
 
 }
 
+/* Hidden logo, name and navbar from header to later use with responsive design using
+desktop breakpoint min-width: 1200px */
+footer .logo-box {
+  display: none;
+}
+
+footer .name-box {
+  display: none;
+}
+
+footer .navbar {
+  display: none;
+}
+
 /* Hidden horizontal line to use later for responsive display in tablet breakpoint 
 (min-width: 992px) */
 .middle-hr {
@@ -82,21 +96,6 @@ section ul {
     list-style-type: circle;
 
 }
-
-/* Hidden logo, name and navbar from header to later use with responsive design using
-desktop breakpoint min-width: 1200px */
-footer .logo-box {
-    display: none;
-}
-
-footer .name-box {
-    display: none;
-}
-
-footer .navbar {
-    display: none;
-}
-
 
 /* Set animation name, duration and iteration count for Icons to add animation effects */
 .fa-solid {
@@ -168,7 +167,7 @@ min-width: 1200px */
     /* Revealed, Logo Box, Name and Navbar */
 footer .logo-box {
     display: block;
-    margin-top: 2vh;
+    margin-top: 0;
 }
 
 footer .name-box {

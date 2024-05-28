@@ -1,9 +1,12 @@
 /* Set Font-size of 16px for readability purposes on Mobile View, Set Font Family
 to standard fonts */
+
+
 body {
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    color: black;
 }
 
 /* Created Flex-box display for main element */
@@ -11,6 +14,21 @@ main {
     display: flex;
     flex-direction: column;
 }
+
+/* Hidden logo, name and navbar from header to later use with responsive design using
+desktop breakpoint min-width: 1200px */
+footer .logo-box {
+    display: none;
+}
+
+footer .name-box {
+    display: none;
+}
+
+footer .navbar {
+    display: none;
+}
+
 
 /* Added border and background color with margin and padding to about-me content box with a 
 box shadow */
@@ -58,8 +76,4 @@ article img {
     height: 300px;
 }
 
-/* Aligned text in paragraph tag to the left */
-section p {
-    text-align: left;
-}
 
