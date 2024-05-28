@@ -9,7 +9,7 @@ section {
 hr {
     border: 1px solid #FFEBC6;
     margin-bottom: 5vh;
-    width: 50vw;
+    width: 30vw;
 }
 
 /* Defined text-shadow and color for easier readability in contrast to added background image */
@@ -24,9 +24,11 @@ width and height viewport*/
     display: flex;
     height: 30vh;
     width: 100vw;
-    margin-bottom: 5vh;
+    margin-bottom: 20vh;
+    margin-top: 20vh;
     justify-content: center;
     align-items: center;
+
 }
 
 /* Added styling to background, border,padding, text and set relative position of text
@@ -34,30 +36,14 @@ width and height viewport*/
 .vision-text {
     background-color: #456990B3;
     border: 5px ridge #057dcd;
-    width: 40vw;
+    width: 30vw;
     color: #FFEBC6;
     padding: 20px;
-    position: relative;
-    left: -55px;
     border-radius: 5%;
     border-top: 0;
     border-bottom: 0;
     box-shadow: 6px 5px 17px 0px rgba(0,0,0,0.75);
 
-}
-
-/* Hidden logo, name and navbar from header to later use with responsive design using
-desktop breakpoint min-width: 1200px */
-footer .logo-box {
-  display: none;
-}
-
-footer .name-box {
-  display: none;
-}
-
-footer .navbar {
-  display: none;
 }
 
 /* Hidden horizontal line to use later for responsive display in tablet breakpoint 
@@ -68,7 +54,7 @@ footer .navbar {
 
 /* Set width and height of image within container to take up 40% viewport width and some padding */
 .vision-image img {
-    width: 40vw;
+    width: 30vw;
     height:300px;
     padding: 20px;
 }
@@ -120,21 +106,9 @@ section ul {
 
 /* TABLET VERSION BREAKPOINT min-width: 992px Tablet Breakpoint */
 
-/* Flipped image and text content using flex-flow: row-reverse and setting container
-to take up 80% of viewport width */
 @media screen and (min-width: 992px){
-    .container {
-        flex-flow: row-reverse;
-        width: 80vw;
-       
-    }
-/* Set margins on both sides of text to later add sidebar nav menu for desktop breakpoint
-min-width: 1200px */
-    .vision-text {
-        margin-right: -20vw;
-        margin-left: 15vw;
-    }
-    
+  
+ 
 /* Set horizontal line to dispay none, removing all hr elements */
     hr {
         display: none;
@@ -164,83 +138,49 @@ min-width: 1200px */
 /* DESKTOP VERSION BREAKPOINT min-width: 1200px Desktop Breakpoint */
 @media screen and (min-width: 1200px){
 
-    /* Revealed, Logo Box, Name and Navbar */
-footer .logo-box {
-    display: block;
-    margin-top: 0;
+.main-box {
+  margin-left: 15vw;
 }
 
-footer .name-box {
-    display: flex;
-}
-
-footer .navbar {
-    display: flex;
-}
-      
-/* Changed background image within body element */
-body {
-    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
-    url(../images/Tech.jpg) no-repeat;
-}
-
-/* Removed previously set values for left, margin and add margin-left */
-.vision-text {
-    position: relative;
-    left: 0;
-    margin: 0;
-    margin-left: 3vw;
-}
    
 /* Removed middle horizontal line */
    .middle-hr {
     display: none;
    }
 
-/* Added margin left of 20% viewport width to leave space for sidebar nav menu */
-  .main-box {
-    margin-left: 20vw;
-  }
-
 /* Set footer to flex-direction column to change default axis, added width, height */
   footer {
     flex-direction: column;
-    width: 20vw;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    align-items: center;
-    justify-content: space-around;
-    
-  }
-
-/* Set flex-direction column for nav bar, added gap, margin for spacing */
-  .nav-flex {
-    flex-direction: column;
-    gap: 5vh;
-    margin-top: 20px;
-  }
-
-/* Centred content in navbar */
-  .navbar {
+    width: 15vw;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left: 0;
+    text-align: center;
     justify-content: center;
-  }
-
-
-/* Added top margin and removed padding from social-icons class */
-  .social-icons {
-    padding: 0;
-    margin-top: 2vh;
+    align-items: center;
+   
   }
 
 /* Set properties and values to name content */
   .name-box {
-    width: auto;
-    margin: 0 20px 20px 20px;
+    margin: auto;
+    padding: 0;
+    width: 10vw;
     color: #FFEBC6;
-    justify-content: center;
     border: 2px solid #FFEBC6;
   }
+
+  .navbar {
+    margin: auto;
+    margin-top: 20px;
+    width: 8vw;
+  }
+
+.nav-flex {
+  gap: 5vh;
+  justify-content: center;
+}
 
 /* Changed color of surname using span */
   .name-box span {
@@ -259,7 +199,19 @@ body {
 
 /* Padding added to text section within footer */
     .info-box, .copyright {
-        padding: 20px;
+      display: none;
     }
-   
+
+  .logo {
+    margin-left: 0;
+  }
+  .container {
+    width: 80vw;
+    text-align: center;
+    justify-content: space-evenly;
+  }
+
 }
+ 
+  
+

@@ -23,10 +23,12 @@ body {
     background: linear-gradient(rgba(255,255,255,0.1),rgba(0,0,0,0.2)),
     url(../images/Earth.jpg) no-repeat center;
     background-position: 50% 40%;
+    width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
     color: #FFEBC6;
-    overflow-x: hidden;
+    overflow-x: hidden; 
     overflow-y: scroll;
 }
 
@@ -39,12 +41,6 @@ body {
     margin-top: 15px;
 }
 
-.logo-box {
-    margin-top: 2vh;
-}
-
-
-
 /* Created Flexbox in Header Element to align as a column  */
 .header-box {
     display: flex;
@@ -55,6 +51,19 @@ body {
     width: 100%;
 }
 
+/* Hidden logo, name and navbar from header to later use with responsive design using
+desktop breakpoint min-width: 1200px */
+footer .logo-box {
+    display: none;
+  }
+  
+  footer .name-box {
+    display: none;
+  }
+  
+  footer .navbar {
+    display: none;
+  }
 
 /* Set name beneath logo with overlapping content onto Nav Menu using Flexbox*/
 .name-box {
@@ -65,12 +74,9 @@ body {
     background-color: #FFEBC6;
     color: black;
     width: 60%;
-    margin-top: 3vh;
+    margin-top: 2vh;
     position: relative;
     transform: translate(0, 40px);
-    z-index: 1;
-    
-
 }
 
 .name-box span {
@@ -80,14 +86,13 @@ body {
 /* CSS Navigation Menu to add border, text color, background color */
 .navbar {
     background-color: #456990B3;
-    width: 100%;
+    width: 100vw;
     padding: 40px 0 10px 0;
     border: 10px outset  #057dcd;
-    border-left: 0;
-    border-right: 0;
     margin: 0;
+    border-left: none;
+    border-right: none;
 
-    
 }
 
 .nav-flex {
@@ -128,6 +133,7 @@ h1, hr, i {
 /* Added Footer Section with padding of 20px around top,right,bottom and left */
 footer {
     text-align: center;
+    width: 100%;
     background-color: #456990B3;
 }
 
@@ -139,13 +145,14 @@ margin of 20px */
     text-align: center;
     list-style: none;
     margin: 0;
-    margin-bottom: 5vh;
+    margin-bottom: 2vh;
+    padding: 0;
 
 }
 
 /* Changed icon sizes to 30px each */
 i {
-    font-size: 2rem;
+    font-size: 1.2rem;
 }
 
 /* Added Footer Copyright Text with Font size, and Color */
@@ -184,7 +191,9 @@ i {
     height: 5vh;
     border: 5px ridge #FFEBC6;
     margin: 0;
+
 }
+
 .name-box {
     margin: 0;
     background-color: #057dcd;
@@ -207,11 +216,12 @@ i {
     padding: 0;
     background: none;
     border: none;
-
+    
 }
 .logo-box {
     padding: 20px;
     box-sizing: border-box;
+    margin-top: 0;
 }
 .header-box div span {
     color: #FFEBC6;
@@ -227,12 +237,46 @@ i {
 }
 
 .social-icons i {
-    font-size: 2rem;
+    font-size: 1.2rem;
 }
 .nav-text {
     padding: 15px 20px;
     border-radius: 10px;
     box-shadow: 6px 5px 17px 0px rgba(0,0,0,0.75);
+}
+
+.navbar li a {
+    font-size: 16px;
+}
+
+}
+
+/* Desktop breakpoint 1200px */
+@media screen and (min-width: 1200px){
+
+.container {
+    width: 50%;
+}
+
+footer .logo-box {
+    display:block;
+  }
+  
+  footer .name-box {
+    display: block;
+  }
+  
+  footer .navbar {
+    display: flex;  
+}
+.navbar .nav-flex {
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+  
+body {
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    url(../images/Tech.jpg) no-repeat;
 }
 
 }
