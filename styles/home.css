@@ -1,20 +1,25 @@
-/* Mobile Version Breakpoint max-width: 768px Mobile Breakpoint */
+/* MOBILE VERSION BREAKPOINT min-width: 768px Mobile Breakpoint */
 
+/* Aligned all text inside section elements towards the center */
 section {
     text-align: center;
 }
 
+/* Defined border properties and margin below horizontal line */
 hr {
     border: 1px solid #FFEBC6;
-    width: 80%;
     margin-bottom: 5vh;
+    width: 50vw;
 }
 
+/* Defined text-shadow and color for easier readability in contrast to added background image */
 h2 {
     color: #FFEBC6;
     text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
+/* Set container holding image and text to display flex, added margin bottom and set a responsive
+width and height viewport*/
 .container {
     display: flex;
     height: 30vh;
@@ -24,6 +29,8 @@ h2 {
     align-items: center;
 }
 
+/* Added styling to background, border,padding, text and set relative position of text
+-55px to overlap onto image */
 .vision-text {
     background-color: #456990B3;
     border: 5px ridge #057dcd;
@@ -39,22 +46,26 @@ h2 {
 
 }
 
+/* Hidden horizontal line to use later for responsive display in tablet breakpoint 
+(min-width: 992px) */
 .middle-hr {
     display: none;
 }
 
+/* Set width and height of image within container to take up 40% viewport width and some padding */
 .vision-image img {
     width: 40vw;
     height:300px;
     padding: 20px;
-
 }
 
+/* Set font-size of text within skills-text and vision-text class */
 .skills-text, .vision-text {
     font-size: 1.1rem;
 }
 
-/* Created a section with  */
+/* Targeted all ul within section element to add styling to background, size of container,
+padding, margin, text, border, box-shadow, and list styling*/
 section ul {
     background-color: #456990B3;
     width: 300px;
@@ -72,12 +83,8 @@ section ul {
 
 }
 
-
-hr {
-    border: 1px solid #FFEBC6;
-    width: 300px;
-}
-
+/* Hidden logo, name and navbar from header to later use with responsive design using
+desktop breakpoint min-width: 1200px */
 footer .logo-box {
     display: none;
 }
@@ -90,7 +97,8 @@ footer .navbar {
     display: none;
 }
 
-/* Set animation name, duration and iteration count for Icons */
+
+/* Set animation name, duration and iteration count for Icons to add animation effects */
 .fa-solid {
     position: relative;
     animation-name: icon;
@@ -98,7 +106,7 @@ footer .navbar {
     animation-iteration-count: infinite;
 }
 
-/* Keyframe animation changing from #057dcd to #FFEBC6; */
+/* Keyframe animation changing from color #057dcd to color #FFEBC6; */
 @keyframes icon {
     0% {color: #057dcd;
         left: -35px;
@@ -111,32 +119,41 @@ footer .navbar {
     }
 }
 
-/* Tablet Version Breakpoint min-width: 992px Tablet Breakpoint */
+/* TABLET VERSION BREAKPOINT min-width: 992px Tablet Breakpoint */
+
+/* Flipped image and text content using flex-flow: row-reverse and setting container
+to take up 80% of viewport width */
 @media screen and (min-width: 992px){
     .container {
         flex-flow: row-reverse;
         width: 80vw;
        
     }
+/* Set margins on both sides of text to later add sidebar nav menu for desktop breakpoint
+min-width: 1200px */
     .vision-text {
         margin-right: -20vw;
         margin-left: 15vw;
     }
     
+/* Set horizontal line to dispay none, removing all hr elements */
     hr {
         display: none;
     }
-   
-    .skills i {
+
+/* Hidden animated icons within skills class */
+.skills i {
         display: none;
     }
 
-    .skills-flex {
+/* Set display to flex to have sections wrap and added spacing */
+.skills-box {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
         
     }
+/* Shown horizontal line before was display:hidden. Set a width and added border property */
     .middle-hr {
         display: block;
         width: 60vw;
@@ -145,51 +162,11 @@ footer .navbar {
 
 }
 
-/* Desktop Version Breakpoint min-width: 1200px Desktop Breakpoint */
+/* DESKTOP VERSION BREAKPOINT min-width: 1200px Desktop Breakpoint */
 @media screen and (min-width: 1200px){
-      
-    body {
-        background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
-        url(../images/Tech.jpg) no-repeat;
-        }
 
-    .vision-text {
-        position: relative;
-        left: 0;
-        margin: 0;
-        margin-left: 3vw;
-    }
-   
-   .middle-hr {
-    display: none;
-   }
-  .outer-flex {
-    margin-left: 20vw;
-  }
-
-  footer {
-    flex-direction: column;
-    width: 20vw;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    align-items: center;
-    justify-content: space-around;
-    
-  }
-
-  .nav-flex {
-    flex-direction: column;
-    gap: 5vh;
-    margin-top: 20px;
-    align-items: center;
-  }
-
-  .navbar {
-    justify-content: center;
-  }
-
-  footer .logo-box {
+    /* Revealed, Logo Box, Name and Navbar */
+footer .logo-box {
     display: block;
     margin-top: 2vh;
 }
@@ -201,37 +178,88 @@ footer .name-box {
 footer .navbar {
     display: flex;
 }
+      
+/* Changed background image within body element */
+body {
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    url(../images/Tech.jpg) no-repeat;
+}
 
+/* Removed previously set values for left, margin and add margin-left */
+.vision-text {
+    position: relative;
+    left: 0;
+    margin: 0;
+    margin-left: 3vw;
+}
+   
+/* Removed middle horizontal line */
+   .middle-hr {
+    display: none;
+   }
+
+/* Added margin left of 20% viewport width to leave space for sidebar nav menu */
+  .main-box {
+    margin-left: 20vw;
+  }
+
+/* Set footer to flex-direction column to change default axis, added width, height */
+  footer {
+    flex-direction: column;
+    width: 20vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    align-items: center;
+    justify-content: space-around;
+    
+  }
+
+/* Set flex-direction column for nav bar, added gap, margin for spacing */
+  .nav-flex {
+    flex-direction: column;
+    gap: 5vh;
+    margin-top: 20px;
+  }
+
+/* Centred content in navbar */
+  .navbar {
+    justify-content: center;
+  }
+
+
+/* Added top margin and removed padding from social-icons class */
   .social-icons {
     padding: 0;
     margin-top: 2vh;
   }
 
+/* Set properties and values to name content */
   .name-box {
     width: auto;
     margin: 0 20px 20px 20px;
-    border: none;
     color: #FFEBC6;
     justify-content: center;
     border: 2px solid #FFEBC6;
   }
+
+/* Changed color of surname using span */
   .name-box span {
     color: #FFEBC6;
   }
 
-  .nav-text {
-    margin: 40px;
-  }
-
-  .skills-flex ul {
+/* Removed margin from bottom of skills-box ul */
+  .skills-box ul {
     margin-bottom: 0;
   }
 
+/* Removed header section for responsive design wtih Desktop Breakpoint min-width: 1200px */
   .header-box {
     display: none;
   }
-  
-    .info, .copyright {
+
+/* Padding added to text section within footer */
+    .info-box, .copyright {
         padding: 20px;
     }
    
