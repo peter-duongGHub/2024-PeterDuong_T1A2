@@ -279,4 +279,8 @@ body {
     url(../images/Tech.jpg) no-repeat;
 }
 
+.vision-outerbox i {
+    display: none;
+}
+
 }
