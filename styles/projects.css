@@ -1,7 +1,7 @@
 main {
     color: black;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 32px;
@@ -34,14 +34,17 @@ div img {
 @media screen and (min-width: 992px){
     
     main {
-        flex-wrap: wrap-reverse;
+        flex-direction: row;
+        flex-wrap: wrap;
         justify-content: center;
     }
     
 
-
-
-
+}
+@media screen and (min-width: 1200px){
+    main, h1 {
+        margin-left: 15vw;
+    }
 }
 
 

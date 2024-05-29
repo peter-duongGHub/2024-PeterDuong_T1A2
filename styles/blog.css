@@ -1,4 +1,11 @@
+/* Style child elements to flex in main element container */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
+/* Blog Links styling */
 .content-list {
     background-color: #456990B3;
     padding: 20px;
@@ -6,21 +13,16 @@
     box-shadow: 6px 5px 17px 0px rgba(0,0,0,0.75);
     border-radius: 10px;
     color: #FFEBC6;
+    width: 300px;
     
 }
 
-.navbar ul li {
-    list-style: none;
-}
-
-.nav-flex {
-    background-color: transparent;
-}
-
-ul li {
+.content-list li {
     padding: 10px;
     list-style-type:square;
     list-style-position: inside;
+    text-decoration: none;
+    color: #FFEBC6;
 }
 
 ul li a{
@@ -28,23 +30,14 @@ ul li a{
     color: #FFEBC6;
 }
 
-.blog {
-    display: flex;
-    flex-direction: column;
+.blog-links span {
+    font-size: 13px;
 }
+
 /* Changed H1 text color to #FFEBC6 */
-h1, h2 {
-    color: #FFEBC6;
-}
 
-.blog-links h2 {
-    margin-left: 20px;
-}
-
-/* Created Image Size for Blog Links */
-main article img {
-    width: 15vh;
-    height: 20vh;
+.blog-links {
+    margin: 20px;
 }
 
 /* Fixed Blog Paragraph content font-size at 13px */
@@ -52,30 +45,33 @@ main article img {
     font-size: 13px;
 }
 
+main article img {
+    width: 100%;
+}
+
 /* Set margins and padding-top and padding-bottom 20px around Each Article Content Box, 
 Set Left and right padding to 0  */
-article {
-    
+.content-box {
     margin-bottom: 5vh;
-    padding: 20px 20px;
+    padding: 20px;
     background-color: #456990B3;
     border-radius: 10px;
     box-shadow: 6px 5px 17px 0px rgba(0,0,0,0.75);
-
+    justify-content: baseline;
 
 }
 
 /* Set display of Blog image to inline-block and set width to take up 50% of parent container  */
 .blog-image {
     display: inline-block;
-    width: 50%;
-    overflow: hidden;
+    width: 40%;
 }
 
 /* Set display of Blog text to inline-block and set width to take up 40% of parent container 
 Set text color #FFEBC6 */
 .blog-text {
     width: 40%;
+    height: 100%;
     display: inline-block;
     color: #FFEBC6;
 
