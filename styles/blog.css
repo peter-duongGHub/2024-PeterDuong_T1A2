@@ -1,5 +1,5 @@
 
-ul {
+.content-list {
     background-color: #456990B3;
     padding: 20px;
     margin: 20px 20px 10vh 20px;
@@ -7,6 +7,14 @@ ul {
     border-radius: 10px;
     color: #FFEBC6;
     
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.nav-flex {
+    background-color: transparent;
 }
 
 ul li {

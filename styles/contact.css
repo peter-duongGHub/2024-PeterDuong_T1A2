@@ -2,7 +2,7 @@
 main {
     display:flex;
     margin: 30px 18vw 10vh 18vw;
-    height: 60vh;
+    height: 100vh;
 }
 
 /* Changed each div flex box to flex-direction: column */
@@ -14,6 +14,10 @@ main {
     text-align: center;
     color: #FFEBC6;
     font-weight: bold;
+}
+
+.me-image {
+    display: none;
 }
 
 /* Center the form using margin: auto; */
@@ -38,4 +42,56 @@ button {
     color: #057dcd;
     font-size: 18px;
     border: 5px inset #057dcd;
+}
+
+.fa-solid {
+    animation-name: rocket;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+
+@keyframes rocket {
+   0% {top: 0px; left: 0px; color: #057dcd;}
+   25% {top: 0px; left: 220px; color: #FFEBC6;}
+   50% {top: 580px; left: 220px; color: green;}
+   75% {top: 580px; left: -100px; color: orange;}
+   100% {top: 0px; left: 0px; color: magenta;}
+}
+
+@media screen and (min-width: 1200px){
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 32px;
+        align-items: top;
+    }
+    
+   main form article {
+        display: none;
+   }
+
+   .me-image {
+    display: block;
+}
+.me-image img {
+    width: auto;
+    height: 200px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 5px 17px 0px rgba(0,0,0,0.75);
+
+}
+
+form section h1 {
+    height: 2vh;
+    font-size: 25px;
+
+}
+
+.contact-image {
+    margin-right: 20px;
+}
+
 }
