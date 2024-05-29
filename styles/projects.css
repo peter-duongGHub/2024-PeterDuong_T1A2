@@ -1,6 +1,16 @@
-.outer-box {
+main {
+    color: black;
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.content-box {
+    width: 300px;
+}
+
+h2 {
+    font-size: 20px;
 }
 
 div img {
@@ -12,12 +22,18 @@ div img {
     margin: 30px 20px 10vh 20px;
     background-color: #FFEBC6;
     border-radius: 5px;
-    overflow:hidden;
-    border: 1px solid #057dcd;
+    border: 5px ridge #057dcd;
+    padding: 20px;
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;   
 }
 
-.content-text {
-    padding: 20px;
+@media screen and (min-width: 992px){
+    
+    main {
+        flex-wrap: wrap-reverse;
+    }
 }
 
 

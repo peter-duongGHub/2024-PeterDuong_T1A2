@@ -42,6 +42,10 @@ hr {
 
 }
 
+section figure {
+    margin: 0;
+}
+
 
 /* Added Italics through CSS instead of <em> html tag */
 article span {
