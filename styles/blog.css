@@ -152,8 +152,16 @@ Set text color to #FFEBC6 and border values*/
     
     .content-box {
         width: 30vw;
+        padding-bottom: 20px;
     }
     .flexbox {
         gap: 40px;
+        flex-wrap: wrap-reverse;
     }
+    .box5 {
+        position: relative;
+        left: -15vw;
+        top: 0;
+    }
+
 }
