@@ -128,7 +128,7 @@ Set text color to #FFEBC6 and border values*/
 
     .flexbox {
         flex-direction: row;
-        flex-flow: row wrap;
+        flex-wrap: wrap;
         gap: 40px;
     }
 
@@ -139,6 +139,21 @@ Set text color to #FFEBC6 and border values*/
     .content-box p {
         margin: 0;
     }
-
     
+}
+
+@media screen and (min-width: 1200px){
+    main {
+        margin-left: 15vw;
+    }
+    h1 {
+        text-align: right;
+    }
+    
+    .content-box {
+        width: 30vw;
+    }
+    .flexbox {
+        gap: 40px;
+    }
 }
