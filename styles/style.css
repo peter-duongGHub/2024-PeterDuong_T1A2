@@ -21,7 +21,7 @@
 /* Inserted background image for body */
 body {
     background: linear-gradient(rgba(255,255,255,0.1),rgba(0,0,0,0.2)),
-    url(../src/images/Earth.jpg) no-repeat center;
+    url(../images/Earth.jpg) no-repeat center;
     background-position: 50% 40%;
     width: 100%;
     height: 100%;
@@ -323,7 +323,7 @@ footer {
   
 body {
     background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
-    url(../src/images/Tech.jpg) no-repeat;
+    url(../images/Tech.jpg) no-repeat;
 }
 
 /* Removed header section for responsive design wtih Desktop Breakpoint min-width: 1200px */
