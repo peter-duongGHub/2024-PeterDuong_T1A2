@@ -14,12 +14,19 @@ main p {
     color: var(--secondary-color);
 }
 
+.name-box p {
+    margin: 10px 0;
+}
+
 .blog-text {
     background-color: #456990B3;
-    margin: 40px 20px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
     border-radius: 10px;
     box-shadow: 6px 5px 17px 0px rgba(0,0,0,0.75);
     padding: 30px;
+    width: 60vw;
 }
 
 .date, .author {
@@ -31,3 +38,44 @@ span {
     display: block;
 }
 
+#blog-post {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 992px){
+    main img {
+        width: 30vw;
+        height: 500px;
+    }
+
+    .blog-text {
+        width: 30vw;
+    }
+
+    .blog-flex {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        gap:30px;
+    }
+
+    .name-box p {
+        margin: 5px 0;
+    }
+
+}
+
+@media screen and (min-width: 1200px){
+    
+    .blog-flex {
+        flex-direction: row-reverse;
+    }
+
+    main {
+        margin-left: 15vw;
+    }
+
+}
