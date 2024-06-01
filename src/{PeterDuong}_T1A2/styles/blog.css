@@ -1,0 +1,148 @@
+
+main h1, hr {
+    text-align: left;
+    margin-left: 20px;
+}
+
+hr {
+    width: 80%;
+    margin-top: 0;
+    margin-bottom: 7vh;
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Text Component 3 */
+.content-list {
+    background-color: #456990B3;
+    padding: 20px;
+    margin: 20px 20px 10vh 20px;
+    box-shadow: 6px 5px 17px 0px rgba(0,0,0,0.75);
+    border-radius: 10px;
+    color: var(--secondary-color);
+    width: 300px;
+    
+}
+
+/* Text Component 3 */
+.content-list li {
+    padding: 10px;
+    list-style-type:square;
+    list-style-position: inside;
+    text-decoration: none;
+    color: var(--secondary-color);
+
+}
+/* Text Component 3 */
+ul li a{
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+/* Text Component 3 */
+.blog-links span {
+    font-size: 13px;
+}
+
+/* Text Component 3 */
+.blog-links {
+    margin: 20px;
+}
+
+/* Graphical Component 4 */
+.content-box img {
+    width: 100%;
+    height: 200px;
+}
+
+/* Graphical Component 4 */
+.content-box {
+    margin-bottom: 5vh;
+    padding: 20px;
+    background-color: #456990B3;
+    border-radius: 10px;
+    box-shadow: 6px 5px 17px 0px rgba(0,0,0,0.75);
+    width: 90vw;
+}
+/* Graphical Component 4 */
+.content-box h2 {
+    font-size: 20px;
+}
+
+/* Graphical Component 4 */
+.blog-image {
+    display: inline-block;
+    width: 30%;
+    margin-right: 2vw;
+}
+
+/* Graphical Component 4 */
+.blog-text {
+    width: 40%;
+    display: inline-block;
+    color: var(--secondary-color);
+}
+/* Graphical Component 4 */
+.blog-text p {
+    font-size: 13px;
+}
+
+/* Graphical Component 4 */
+.content-box button {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: var(--secondary-color);
+    border: 5px inset var(--secondary-color);
+    border-radius: 2px;
+}
+
+@media screen and (min-width: 992px){
+
+    hr {
+        display: none;
+    }
+
+    .flexbox {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+/* Graphical Component 4 */
+    .content-box {
+        width: 40vw;
+        height: 45vh;
+    }
+/* Graphical Component 4 */
+    .content-box p {
+        margin: 0;
+    }
+    
+}
+
+@media screen and (min-width: 1200px){
+    main {
+        margin-left: 15vw;
+    }
+    h1 {
+        text-align: right;
+    }
+/* Graphical Component 4 */
+    .content-box {
+        width: 30vw;
+        padding-bottom: 20px;
+    }
+    .flexbox {
+        gap: 40px;
+        flex-wrap: wrap-reverse;
+    }
+    .box5 {
+        position: relative;
+        left: -15vw;
+        top: 0;
+    }
+
+}

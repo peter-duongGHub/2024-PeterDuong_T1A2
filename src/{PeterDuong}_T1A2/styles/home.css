@@ -1,0 +1,154 @@
+section {
+    text-align: center;
+}
+
+hr {
+    border: 1px solid var(--secondary-color);
+    margin-bottom: 5vh;
+    width: 30vw;
+}
+
+h2 {
+    color: var(--secondary-color);
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+
+.container {
+    display: flex;
+    height: 30vh;
+    width: 100vw;
+    margin-bottom: 20vh;
+    margin-top: 20vh;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* Text Component 4 */
+.vision-text {
+    background-color: #456990B3;
+    border: 5px ridge var(--primary-color);
+    width: 50vw;
+    color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 5%;
+    border-top: 0;
+    border-bottom: 0;
+    box-shadow: 6px 5px 17px 0px rgba(0,0,0,0.75);
+
+}
+
+
+.middle-hr {
+    display: none;
+}
+
+.vision-image img {
+    width: 30vw;
+    height:300px;
+    padding: 20px;
+}
+
+
+section ul {
+    background-color: #456990B3;
+    width: 300px;
+    margin: auto;
+    margin-bottom: 5vh;
+    padding: 30px;
+    color: var(--secondary-color);
+    border: 5px solid var(--primary-color);
+    border-radius: 5%;;
+    box-shadow: 6px 5px 17px 0px rgba(0,0,0,0.75);
+    border-left: 0;
+    border-right: 0;
+    list-style-position: inside;
+    list-style-type: circle;
+
+}
+
+.fa-solid {
+    position: relative;
+    animation-name: icon;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes icon {
+    0% {color: var(--primary-color);
+        left: -35px;
+    }
+    50% {color: var(--secondary-color);
+        left: 0px
+    }
+    100% {color: var(--primary-color);
+        left: 35px;
+    }
+}
+
+/* TABLET VERSION BREAKPOINT min-width: 992px Tablet Breakpoint */
+@media screen and (min-width: 992px){
+  
+.container {
+  margin-top: 5vh;
+}
+ 
+    hr {
+        display: none;
+    }
+
+.skills i {
+        display: none;
+    }
+
+.skills-box {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        
+    }
+    .middle-hr {
+        display: block;
+        width: 60vw;
+        border: 2px solid var(--secondary-color);
+    }
+
+}
+
+/* DESKTOP VERSION BREAKPOINT min-width: 1200px Desktop Breakpoint */
+@media screen and (min-width: 1200px){
+
+.main-box {
+  margin-left: 15vw;
+}
+
+   
+   .middle-hr {
+    display: none;
+   }
+
+.nav-text {
+  justify-content: center;
+  align-items: center;
+}
+
+  .skills-box ul {
+    margin-bottom: 0;
+  }
+
+  .container {
+    width: 80vw;
+    text-align: center;
+    justify-content: space-evenly;
+    margin-bottom: 10vh;
+  }
+
+  .vision-outerbox i {
+    display: none;
+}
+
+}
+ 
+  
+

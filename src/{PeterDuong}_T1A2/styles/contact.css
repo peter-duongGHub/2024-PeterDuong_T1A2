@@ -1,0 +1,107 @@
+main {
+    display:flex;
+    margin: 50px 18vw 50px 18vw;
+    height: 100vh;
+    background-color: #456990B3;
+    box-shadow: 6px 5px 17px 0px rgba(0,0,0,0.75);
+}
+
+/* Text Component 1 - all styling applied below EXCEPT for images styled */
+.form-content {
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 200px;
+    font-size: 20px;
+    text-align: center;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.me-image {
+    display: none;
+}
+
+form {
+margin: auto;
+
+}
+
+form input {
+    color: var(--secondary-color);
+    font-size: 16px;
+    background-color: transparent;
+    border: 10px double var(--secondary-color);
+}
+
+.sub {
+    margin-top: 40px;
+    padding: 20px 30px;
+    background-color: var(--secondary-color);
+    border-radius: 30px;
+    color: var(--primary-color);
+    font-size: 18px;
+    border: 5px inset var(--primary-color);
+}
+
+.fa-solid {
+    animation-name: rocket;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+
+@keyframes rocket {
+   0% {top: 0px; left: 0px; color: var(--primary-color);}
+   25% {top: 0px; left: 220px; color: var(--secondary-color);}
+   50% {top: 580px; left: 220px; color: green;}
+   75% {top: 580px; left: -100px; color: orange;}
+   100% {top: 0px; left: 0px; color: magenta;}
+}
+
+@media screen and (min-width: 992px){
+    main{
+        background-color: transparent;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 32px;
+        align-items: top;
+    }
+    
+   main form article {
+        display: none;
+   }
+
+   main {
+    margin-bottom: 0;
+
+   }
+
+   .me-image {
+    display: block;
+}
+.me-image img {
+    width: auto;
+    height: 200px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 5px 17px 0px rgba(0,0,0,0.75);
+
+}
+
+form section h1 {
+    height: 2vh;
+    font-size: 25px;
+
+}
+
+.contact-image {
+    margin-right: 20px;
+}
+
+}
