@@ -24,6 +24,8 @@ The purpose of my website is to showcase my skills, hobbies & work experience to
 - The use of background colours/images for text components helps with readability of text when used in conjunction with complimentary colours.  
 ### Use of line-height, font-size, word-spacing, font-family, letter-spacing 
 - For readability purposes all the mentioned properties were set to the recommended sizes. This makes reading the document easier.
+### Contact Page Form
+- Contact Page is a form that can be filled by the visitor or viewer for any enquiries or employment opportunities for me
 
 ### Coolors 
 ![Screenshot of Coolors](./doc/Coolors.png) 
