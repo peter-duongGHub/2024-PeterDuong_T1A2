@@ -62,7 +62,7 @@ div img {
     display: flex;
     gap: 5vw;
 }
-
+/* TABLET VERSION BREAKPOINT min-width: 992px Tablet Breakpoint */
 @media screen and (min-width: 992px){
     
     main {
@@ -73,6 +73,7 @@ div img {
     
 
 }
+/* DESKTOP VERSION BREAKPOINT min-width: 1200px Desktop Breakpoint */
 @media screen and (min-width: 1200px){
     main, h1 {
         margin-left: 15vw;

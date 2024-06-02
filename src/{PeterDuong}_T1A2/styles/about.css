@@ -58,7 +58,7 @@ h2 {
 footer {
     color: var(--secondary-color);
 }
-
+/* TABLET VERSION BREAKPOINT min-width: 992px Tablet Breakpoint */
 @media screen and (min-width: 992px) {
 
     .hobbies {
@@ -85,6 +85,7 @@ footer {
     }
 
 }
+/* DESKTOP VERSION BREAKPOINT min-width: 1200px Desktop Breakpoint */
 @media screen and (min-width: 1200px) {
     main {
         margin-left: 15vw;

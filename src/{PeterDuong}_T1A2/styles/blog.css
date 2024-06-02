@@ -99,7 +99,7 @@ ul li a{
     border: 5px inset var(--secondary-color);
     border-radius: 2px;
 }
-
+/* TABLET VERSION BREAKPOINT min-width: 992px Tablet Breakpoint */
 @media screen and (min-width: 992px){
 
     hr {
@@ -122,7 +122,7 @@ ul li a{
     }
     
 }
-
+/* DESKTOP VERSION BREAKPOINT min-width: 1200px Desktop Breakpoint */
 @media screen and (min-width: 1200px){
     main {
         margin-left: 15vw;

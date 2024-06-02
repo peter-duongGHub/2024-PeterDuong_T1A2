@@ -57,13 +57,13 @@ form input {
    75% {top: 580px; left: -100px; color: orange;}
    100% {top: 0px; left: 0px; color: magenta;}
 }
-
+/* TABLET VERSION BREAKPOINT min-width: 992px Tablet Breakpoint */
 @media screen and (min-width: 992px){
     main{
         background-color: transparent;
     }
 }
-
+/* DESKTOP VERSION BREAKPOINT min-width: 1200px Desktop Breakpoint */
 @media screen and (min-width: 1200px){
     form {
         display: flex;

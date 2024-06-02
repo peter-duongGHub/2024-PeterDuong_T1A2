@@ -1,9 +1,6 @@
-/* Mobile Version Breakpoint max-width: 768px Mobile Breakpoint */
-
 /* Imported Font style Kanit from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-/* Defined variables to use universally throughout html pages linking to style.css*/
 :root {
     --navy-blue: #456990;
     --primary-color: #057dcd;
@@ -16,8 +13,7 @@
     
 }
 
-/* Reset all margin and padding for elements within HTML and Body Tag */
-/* Inserted background image for body */
+
 body {
     background: linear-gradient(rgba(255,255,255,0.1),rgba(0,0,0,0.2)),
     url(../images/Earth.jpg) no-repeat center;
@@ -31,7 +27,6 @@ body {
     overflow-y: scroll;
 }
 
-/* Set Logo Size, Border Added with double lines, Margin Added to Top */
 .logo {
     width: 100px;
     height: 100px;
@@ -40,7 +35,6 @@ body {
     margin-top: 15px;
 }
 
-/* Created Flexbox in Header Element to align as a column  */
 .header-box {
     display: flex;
     flex-direction: column;
@@ -50,8 +44,7 @@ body {
     width: 100%;
 }
 
-/* Hidden logo, name and navbar from header to later use with responsive design using
-desktop breakpoint min-width: 1200px */
+
 footer .logo-box {
     display: none;
   }
@@ -64,7 +57,6 @@ footer .logo-box {
     display: none;
   }
 
-/* Set name beneath logo with overlapping content onto Nav Menu using Flexbox*/
 .name-box {
     font-family: Kanit;
     font-size: 1.3rem;
@@ -83,7 +75,6 @@ footer .logo-box {
     color: var(--primary-color);
 }
 
-/* CSS Navigation Menu to add border, text color, background color */
 .navbar {
     background-color: #456990cf;
     width: 100vw;
@@ -109,7 +100,6 @@ footer .logo-box {
 }
 
 
-/* Pseudoclass added when mouse hovers over background colour and text color changes */
 .nav-text:hover {
     background-color: var(--secondary-color);
     color: var(--primary-color);
@@ -130,15 +120,13 @@ h1, hr, i {
 
 
 
-/* Added Footer Section with padding of 20px around top,right,bottom and left */
 footer {
     text-align: center;
     width: 100%;
     background-color: #456990cf;
 }
 
-/* Set Flex Box for Icons in Footer to display default flex-direction:row; Added Space between each Icon and Centered Each Icon along main axis. Added bottom
-margin of 20px */
+
 .social-icons {
     display:flex;
     justify-content: space-around;
@@ -149,12 +137,10 @@ margin of 20px */
 
 }
 
-/* Changed icon sizes to 30px each */
 i {
     font-size: 1.1rem;
 }
 
-/* Styled CV button in footer */
 #resume {
     padding: 10px;
     border-radius: 10px;
@@ -164,7 +150,6 @@ i {
     margin-top : 10px;
 }
 
-/* Added Footer Copyright Text with Font size, and Color */
 .copyright {
     padding-top: 20px;
     margin: 0;
@@ -180,7 +165,7 @@ i {
 }
 
 
-/* Tablet Version Breakpoint min Width: 992px */
+/* TABLET VERSION BREAKPOINT min-width: 992px Tablet Breakpoint */
 @media screen and (min-width: 992px){ 
     
 .header-box {
@@ -248,8 +233,7 @@ i {
 }
 
 }
-
-/* Desktop breakpoint 1200px */
+/* DESKTOP VERSION BREAKPOINT min-width: 1200px Desktop Breakpoint */
 @media screen and (min-width: 1200px){
 
 .container {
@@ -265,12 +249,10 @@ footer .logo-box {
     height: 10vh;
 }
 
-/* Changed color of surname using span */
 .name-box span {
     color: var(--secondary-color);
   }
   
-/* Set properties and values to name content */
 .name-box {
     margin: auto;
     padding: 0;
@@ -325,7 +307,6 @@ body {
     url(../images/Tech.jpg) no-repeat;
 }
 
-/* Removed header section for responsive design wtih Desktop Breakpoint min-width: 1200px */
 .header-box {
     display: none;
   }
