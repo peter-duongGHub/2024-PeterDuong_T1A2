@@ -26,6 +26,8 @@ The purpose of my website is to showcase my skills, hobbies & work experience to
 - For readability purposes all the mentioned properties were set to the recommended sizes. This makes reading the document easier.
 ### Contact Page Form
 - Contact Page is a form that can be filled by the visitor or viewer for any enquiries or employment opportunities for me
+### Blog links listed or through read more button
+- Blog Posts can be accessed by clicking the read more button or click the individual blog links. Each link will redirect the user to a specific blog post in which users may read about interesting topics relating to web development.
 
 ### Coolors 
 ![Screenshot of Coolors](./doc/Coolors.png) 
@@ -222,6 +224,7 @@ Contact page, Blog page, Social media icons (link to external website; GitHub, L
 - 5 Navigation links to 5 different blog pages 
 - Graphical/Text Components
 - 5 Read more buttons linking to 5 respective blog pages
+Viewers
 
 #### Blog Post Page 
 - Logo
