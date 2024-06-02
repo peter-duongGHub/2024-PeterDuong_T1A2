@@ -3,7 +3,7 @@
 ## Links Required for README Document
 
 ### Link to Published Portfolio Website
-[Netlify](https://main--peterduongt1a2.netlify.app/)
+[Netlify](https://peterduongt1a2.netlify.app/)
 
 ### Link to GitHub Repository 
 [GitHub](https://github.com/peter-duongGHub?tab=repositories)
